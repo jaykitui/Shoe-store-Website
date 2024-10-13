@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* From Uiverse.io by adamgiebl */
+#button1212-1 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  max-width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #ff0072;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ff0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button1212-1:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ff0072;
+  z-index: -1;
+}
+
+#button1212-1:hover,
+#button1212-1:focus {
+  color: white;
+}
+
+#button1212-1:hover:before,
+#button1212-1:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+#button1212-1:active {
+  transform: scale(0.9);
+}
+#button1212-1 {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  #button1212-1 {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #button1212-1 {
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+.footer-link {
+  color: orangered;
+}
+/*exploring section*/
+#button1212-2 {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(236, 32%, 26%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+#button1212-2::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate3d(-50%, 50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+#button1212-2:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+#button1212-2:hover::before {
+  transform: translate3d(-50%, 50%, 0) scale3d(15, 15, 15);
+}
+
+#img-1 {
+  border-radius: 10px;
+  height: 570px;
+}
+/*gradient css*/
+.testimonials {
+  background-color: hsla(14.588235294117649, 100%, 50%, 1);
+  background-image: radial-gradient(
+      circle at 0% 99%,
+      hsla(289.9038461538462, 86%, 47%, 1) 0%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at 46% 94%,
+      hsla(14.588235294117649, 100%, 50%, 1) 0%,
+      transparent 81%
+    ),
+    radial-gradient(
+      circle at 93% 95%,
+      hsla(283.27868852459017, 100%, 23%, 1) 0%,
+      transparent 66%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(253.469387755102, 100%, 9%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(271.9148936170212, 99%, 53%, 1) 0%,
+      transparent 150%
+    );
+  background-blend-mode: normal, normal, normal, normal, normal;
+}
+body {
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    border-radius: 39px;
+  }
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 10px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    /* border-radius: 10px;*/
+    border-radius: 39px;
+    background: #c7c6a8;
+    box-shadow: 20px 20px 29px #635b8d, -20px -20px 29px #d7d6db;
+  }
+}
+
+#card3 {
+  border-radius: 39px;
+  background: linear-gradient(145deg, #d8dff2, #b6bbcb);
+  box-shadow: 11px 11px 48px #757983, -11px -11px 48px #ffffff;
+}
+/*underline header of footer*/
+.footer-link {
+  position: relative;
+}
+
+.footer-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fc2f70;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-link:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+}
+
+#underline-text {
+  position: relative;
+}
+
+#underline-text::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  width: 82%;
+  bottom: 0;
+  margin-left: 74px;
+  left: 0;
+
+  background-color: hsla(46, 100%, 50%, 1);
+  background-image: radial-gradient(
+      circle at 0% 99%,
+      hsla(321, 86%, 47%, 1) 0%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at 46% 94%,
+      hsla(46, 100%, 50%, 1) 0%,
+      transparent 81%
+    ),
+    radial-gradient(
+      circle at 93% 95%,
+      hsla(315, 100%, 23%, 1) 0%,
+      transparent 66%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(285, 100%, 9%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(303, 99%, 53%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(208, 85%, 47%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(333, 47%, 51%, 1) 0%,
+      transparent 150%
+    );
+  background-blend-mode: normal, normal, normal, normal, normal, normal, normal;
+  right: 0;
+  /* background-color: #e70f07;*/
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#underline-text:hover::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+/* styling the subscription section*/
+.subscription-color {
+  background-color: hsla(14.588235294117649, 100%, 50%, 1);
+  background-image: radial-gradient(
+      circle at 0% 99%,
+      hsla(289.9038461538462, 86%, 47%, 1) 0%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at 46% 94%,
+      hsla(14.588235294117649, 100%, 50%, 1) 0%,
+      transparent 81%
+    ),
+    radial-gradient(
+      circle at 93% 95%,
+      hsla(283.27868852459017, 100%, 23%, 1) 0%,
+      transparent 66%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(253.469387755102, 100%, 9%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(271.9148936170212, 99%, 53%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(176.02941176470588, 85%, 47%, 1) 0%,
+      transparent 150%
+    );
+  background-blend-mode: normal, normal, normal, normal, normal, normal;
+}
+/*
+border shadows
+*/
+.border-shadow1 {
+  border-radius: 39px;
+  background: linear-gradient(145deg, transparent, transparent);
+  box-shadow: 11px 11px 18px transparent, -11px -11px 18px #ffffff;
+}
+
+.border-shadow2 {
+  border-radius: 23px;
+  background: linear-gradient(225deg, #d8dff2, #b6bbcb);
+  box-shadow: -20px 20px 27px #51535a, 20px -20px 27px #5dc8d6;
+}
+/*
+ footer links 
+*/
+
+.footer-link {
+  position: relative;
+}
+
+.footer-link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsla(46, 100%, 50%, 1);
+  background-image: radial-gradient(
+      circle at 0% 99%,
+      hsla(321, 86%, 47%, 1) 0%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at 46% 94%,
+      hsla(46, 100%, 50%, 1) 0%,
+      transparent 81%
+    ),
+    radial-gradient(
+      circle at 93% 95%,
+      hsla(315, 100%, 23%, 1) 0%,
+      transparent 66%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(285, 100%, 9%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(303, 99%, 53%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(208, 85%, 47%, 1) 0%,
+      transparent 150%
+    ),
+    radial-gradient(
+      circle at 89% 8%,
+      hsla(333, 47%, 51%, 1) 0%,
+      transparent 150%
+    );
+  background-blend-mode: normal, normal, normal, normal, normal, normal, normal;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-link:hover::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+/*card ##button1212 styling*/
+
+.btn {
+  --color: #0ea79a;
+  --color2: rgb(10, 25, 30);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+/*registration page begins here*/
+/* From Uiverse.io by akshat-patel28 */
+.form-container {
+  width: 350px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px 0 30px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.input {
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+.page-link {
+  text-decoration: underline;
+  margin: 0;
+  text-align: end;
+  color: #747474;
+  text-decoration-color: #747474;
+}
+
+.page-link-label {
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.page-link-label:hover {
+  color: #000;
+}
+
+.form-btn {
+  padding: 10px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-btn:active {
+  box-shadow: none;
+}
+
+.sign-up-label {
+  margin: 0;
+  font-size: 10px;
+  color: #747474;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sign-up-link {
+  margin-left: 1px;
+  font-size: 11px;
+  text-decoration: underline;
+  text-decoration-color: teal;
+  color: teal;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.apple-login-button,
+.google-login-button {
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  gap: 5px;
+}
+
+.apple-login-button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.google-login-button {
+  border: 2px solid #747474;
+}
+
+.apple-icon,
+.google-icon {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+.btn123
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.Btn::before {
+  position: absolute;
+  content: "SUBSCRIBE";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
